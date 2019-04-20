@@ -76,7 +76,6 @@ class ArrayInt {
 
     // Сортировка выбором -----------------------------------------------------------------------------------------
 
-
     public void sortSelectInt() {
         int out, in, marker;
         for (out = 0; out < size; out++) {
@@ -89,6 +88,7 @@ class ArrayInt {
             change(out, marker);
         }
     }
+
     // Сортировка вставкой ---------------------------------------------------------------------------------------
 
     public void sortInsertObjectInt() {

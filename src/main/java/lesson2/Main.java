@@ -9,10 +9,12 @@ package lesson2;
  */
 
 public class Main {
+    public static final int CAPACITY = 1000000;
+
     public static void main(String[] args) {
-        int size = 1000000;
-        ArrayInt arr1 = new ArrayInt(size);
-        for (int i = 0; i < size; i++) arr1.insert((int) (Math.random() * Integer.MAX_VALUE));
+
+        ArrayInt arr1 = new ArrayInt(CAPACITY);
+        for (int i = 0; i < CAPACITY; i++) arr1.insert((int) (Math.random() * Integer.MAX_VALUE));
 
         // Начало отсчета сортировки пузырьком
         long start = System.currentTimeMillis();
@@ -25,8 +27,8 @@ public class Main {
 
 //------------------------------------------------------------------------------------------------------------
 
-        ArrayInt arr2 = new ArrayInt(size);
-        for (int i = 0; i < size; i++) arr2.insert((int) (Math.random() * Integer.MAX_VALUE));
+        ArrayInt arr2 = new ArrayInt(CAPACITY);
+        for (int i = 0; i < CAPACITY; i++) arr2.insert((int) (Math.random() * Integer.MAX_VALUE));
 
         // Начало отсчета сортировки выбором
         start = System.currentTimeMillis();
@@ -40,8 +42,8 @@ public class Main {
 
 //------------------------------------------------------------------------------------------------------------
 
-        ArrayInt arr3 = new ArrayInt(size);
-        for (int i = 0; i < size; i++) arr3.insert((int) (Math.random() * Integer.MAX_VALUE));
+        ArrayInt arr3 = new ArrayInt(CAPACITY);
+        for (int i = 0; i < CAPACITY; i++) arr3.insert((int) (Math.random() * Integer.MAX_VALUE));
 
         // Начало отсчета сортировки вставкой
         start = System.currentTimeMillis();
