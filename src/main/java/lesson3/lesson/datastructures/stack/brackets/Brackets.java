@@ -1,7 +1,8 @@
 package lesson3.lesson.datastructures.stack.brackets;
 
-import ru.geekbrains.datastructures.stack.Stack;
-import ru.geekbrains.datastructures.stack.StackImpl;
+
+import lesson3.lesson.datastructures.stack.Stack;
+import lesson3.lesson.datastructures.stack.StackImpl;
 
 public class Brackets {
 

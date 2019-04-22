@@ -1,8 +1,5 @@
 package lesson3.lesson.datastructures.queue;
 
-import ru.geekbrains.datastructures.stack.Stack;
-import ru.geekbrains.datastructures.stack.StackImpl;
-
 public class QueueExample {
 
     public static void main(String[] args) {
