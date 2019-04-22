@@ -1,4 +1,4 @@
-package ru.geekbrains.datastructures.queue;
+package lesson3.lesson.datastructures.queue;
 
 import ru.geekbrains.datastructures.stack.Stack;
 import ru.geekbrains.datastructures.stack.StackImpl;

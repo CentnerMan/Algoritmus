@@ -1,4 +1,4 @@
-package ru.geekbrains.datastructures.queue;
+package lesson3.lesson.datastructures.queue;
 
 public class QueueImpl<E> implements Queue<E> {
 

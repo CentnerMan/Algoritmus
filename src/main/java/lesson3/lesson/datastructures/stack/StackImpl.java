@@ -1,4 +1,4 @@
-package ru.geekbrains.datastructures.stack;
+package lesson3.lesson.datastructures.stack;
 
 public class StackImpl<E> implements Stack<E> {
 

@@ -1,4 +1,4 @@
-package ru.geekbrains.datastructures.stack.brackets;
+package lesson3.lesson.datastructures.stack.brackets;
 
 public class TestBrackets {
 

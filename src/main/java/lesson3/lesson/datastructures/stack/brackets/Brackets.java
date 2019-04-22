@@ -1,4 +1,4 @@
-package ru.geekbrains.datastructures.stack.brackets;
+package lesson3.lesson.datastructures.stack.brackets;
 
 import ru.geekbrains.datastructures.stack.Stack;
 import ru.geekbrains.datastructures.stack.StackImpl;
