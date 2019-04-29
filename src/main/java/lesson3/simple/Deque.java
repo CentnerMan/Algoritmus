@@ -27,8 +27,7 @@ public class Deque {
         if (front > 0) {
             front--;
             deque[front] = ch;
-        }
-        if (front == 0) {
+        } else if (front == 0) {
             front = maxSize;
             deque[--front] = ch;
         }

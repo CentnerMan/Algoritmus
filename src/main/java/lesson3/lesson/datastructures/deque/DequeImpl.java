@@ -32,8 +32,7 @@ public class DequeImpl<E> extends QueueImpl<E> implements Deque<E> {
         if (front > 0) {
             front--;
             data[front] = value;
-        }
-        if (front == 0) {
+        } else if (front == 0) {
             front = data.length;
             data[--front] = value;
         }
@@ -64,9 +63,8 @@ public class DequeImpl<E> extends QueueImpl<E> implements Deque<E> {
             throw QueueOverloadException.queueIsEmpty();
         }
 
+        if (rear < DEFAULT_FRONT) rear = data.length - 1;
         E removedValue = data[rear--];
-        if (rear == data.length - 1)
-            rear = DEFAULT_REAR;
         size--;
         return removedValue;
     }
