@@ -69,10 +69,6 @@ public class TestIterator {
             current = current.getNext();
         }
 
-//        System.out.println("------");
-
-//        linkedList.display();
-
         System.out.println("=======");
 
         for (Integer value : linkedList) {

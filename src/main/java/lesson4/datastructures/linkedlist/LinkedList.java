@@ -1,6 +1,6 @@
 package lesson4.datastructures.linkedlist;
 
-public interface LinkedList<E> {
+public interface LinkedList<E> extends Iterable<E> {
 
     void insert(E value);
 
@@ -19,5 +19,4 @@ public interface LinkedList<E> {
     E getFirstElement();
 
     Entry<E> getFirst();
-
 }
