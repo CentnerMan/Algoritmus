@@ -6,7 +6,7 @@ public class ArrayImpl<E extends Object & Comparable<? super E>> implements Arra
 
     static final int DEFAULT_CAPACITY = 8;
 
-    E[] data;
+    protected E[] data;
     protected int currentSize;
 
 
