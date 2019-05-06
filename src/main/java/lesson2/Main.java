@@ -13,8 +13,20 @@ public class Main {
 
     public static void main(String[] args) {
 
+// Инициализация массивов
+
         ArrayInt arr1 = new ArrayInt(CAPACITY);
-        for (int i = 0; i < CAPACITY; i++) arr1.insert((int) (Math.random() * Integer.MAX_VALUE));
+        ArrayInt arr2 = new ArrayInt(CAPACITY);
+        ArrayInt arr3 = new ArrayInt(CAPACITY);
+
+        for (int i = 0; i < CAPACITY; i++) {
+            int x = (int) (Math.random() * Integer.MAX_VALUE);
+            arr1.insert(x);
+            arr2.insert(x);
+            arr3.insert(x);
+        }
+
+//------------------------------------------------------------------------------------------------------------
 
         // Начало отсчета сортировки пузырьком
         long start = System.currentTimeMillis();
@@ -27,9 +39,6 @@ public class Main {
 
 //------------------------------------------------------------------------------------------------------------
 
-        ArrayInt arr2 = new ArrayInt(CAPACITY);
-        for (int i = 0; i < CAPACITY; i++) arr2.insert((int) (Math.random() * Integer.MAX_VALUE));
-
         // Начало отсчета сортировки выбором
         start = System.currentTimeMillis();
 
@@ -41,9 +50,6 @@ public class Main {
 
 
 //------------------------------------------------------------------------------------------------------------
-
-        ArrayInt arr3 = new ArrayInt(CAPACITY);
-        for (int i = 0; i < CAPACITY; i++) arr3.insert((int) (Math.random() * Integer.MAX_VALUE));
 
         // Начало отсчета сортировки вставкой
         start = System.currentTimeMillis();
