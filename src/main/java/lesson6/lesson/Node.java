@@ -1,11 +1,13 @@
+package lesson6.lesson;
+
 import java.util.Objects;
 
 public class Node<T extends Comparable<? super T>> {
 
     private final T value;
 
-    private Node<T> leftChild;
-    private Node<T> rightChild;
+    protected Node<T> leftChild;
+    protected Node<T> rightChild;
 
 
     public Node(T value) {
@@ -31,6 +33,7 @@ public class Node<T extends Comparable<? super T>> {
     public void setRightChild(Node<T> rightChild) {
         this.rightChild = rightChild;
     }
+
 
     public boolean shouldBeLeft(T anotherValue) {
         if (anotherValue == null) {

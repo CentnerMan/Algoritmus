@@ -1,3 +1,5 @@
+package lesson6.lesson;
+
 public interface Tree<E extends Comparable<? super E>> {
 
     enum TraverseMode {

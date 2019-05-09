@@ -1,17 +1,25 @@
+package lesson6.lesson;
+
 public class Main6 {
 
     public static void main(String[] args) {
         Tree<Integer> tree = new TreeImpl<>();
-        tree.add(60);
-        tree.add(25);
-        tree.add(66);
-        tree.add(15);
-        tree.add(5);
-        tree.add(20);
-        tree.add(45);
-        tree.add(30);
-        tree.add(32);
-        tree.add(55);
+//        tree.add(60);
+//        tree.add(25);
+//        tree.add(66);
+//        tree.add(15);
+//        tree.add(5);
+//        tree.add(20);
+//        tree.add(45);
+//        tree.add(30);
+//        tree.add(32);
+//        tree.add(55);
+//        tree.add(55);
+
+        for (int i = 0; i < 100; i++) {
+            Integer num = (int) (Math.random() * 300 - 150);
+            if (!tree.find(num)) tree.add(num);
+        }
 
         tree.traverse(Tree.TraverseMode.POST_ORDER);
 
@@ -24,7 +32,7 @@ public class Main6 {
 
 //        tree.remove(66);
 //        tree.remove(30);
-        tree.remove(25);
-        tree.display();
+//        tree.remove(25);
+//        tree.display();
     }
 }
