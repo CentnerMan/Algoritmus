@@ -1,4 +1,4 @@
-package ru.lebedev.se.lesson6;
+package lesson6.manual;
 
 public class Stack {
     private int maxSize;

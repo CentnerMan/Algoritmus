@@ -1,4 +1,4 @@
-package ru.lebedev.se.lesson6;
+package lesson6.manual;
 
 import java.io.BufferedReader;
 import java.io.IOException;
