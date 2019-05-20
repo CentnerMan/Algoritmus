@@ -57,7 +57,7 @@ public class SortedListEntry {
     public Entry find(Item item) {
         Entry current = first;
 
-        while (current != null) {
+        while (current != null && item.getId() >= current.getKey().getId()) {
             if (current.getKey().getId() == item.getId()) {
                 return current;
             } else {
